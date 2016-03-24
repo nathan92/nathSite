@@ -53,13 +53,7 @@ a {
 
 #imageBox {
 	padding-right: 0;
-}
-
-#basicInfo {
-  top:50%;
-  transform: translateY(120%);
-  -webkit-transform: translateY(120%);
-  -ms-transform: translateY(120%);
+  padding-left: 0;
 }
 
 #navBar h3 {
