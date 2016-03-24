@@ -54,6 +54,8 @@ a {
 #imageBox {
 	padding-right: 0;
   padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 #navBar h3 {
