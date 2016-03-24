@@ -18,9 +18,9 @@
 <!--______________________________Navigation bar: __________________________-->
     <div class="row">
   		<div class="row" id="navBar">
-  			<a name="workAnchor"></a>
+  			
   			<div class="col-sm-4"><h3 id="homebtn">Home</h3></div>
-  			<div class="col-sm-4"><h3 id="wrkbtn"><a href="#workAnchor" style="text-decoration:none; color: white;">Work</a></h3></div>
+  			<div class="col-sm-4"><h3 id="wrkbtn">Work</h3></div>
   			<div class="col-sm-4"><h3 id="cntctbtn">Contact</h3></div>
   		</div>
 <!--________________________________________________________________________-->
@@ -96,8 +96,24 @@
   	    <div class="row page" id="contact" style="display: none;">
 	    	<div class="col-sm-12">
 	    		<h2>Contact</h2>
-	    		<p>Contact me at nathan92oldfield@gmail.com</p>
-	    		<p>View my linkedin at www.linkedin.com/in/nathanrexoldfield</p>
+	    		<div class="row">
+	    			<div class="col-sm-4"></div>
+	    			<div class="col-sm-4 center-block">
+                      <span>
+			    		 <p><a href="https://www.linkedin.com/in/nathanrexoldfield"><img src="images/linkedin.png" width="50%"></a>Linkedin</p>
+			    	  </span>
+			    	  <p class="centertext"> Or...</p>
+			    	  <br>
+			    	  <form>
+					  <input class="btn btn-primary btn-lg center-block" type="button" value="Send me an email :)" onclick="window.location.href='mailto:nathan92oldfield@gmail.com'" />
+					  <br>
+					  </form>
+	    			</div>
+	    			<div class="col-sm-4"></div>
+	    		
+		    	</div>
+		    	
+		    	
 
 	    	</div>
   	    </div>
