@@ -6,6 +6,7 @@
     <meta name="Nathan Oldfield" content="CS at Manchester University">
     <!--to ensure proper mobile rendering and touch zooming-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/neo.png">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="swipebox/css/swipebox.css">
@@ -20,7 +21,7 @@
     <div class="row">
   		<div class="row" id="navBar">
   			
-  			<div class="col-sm-4"><h3 id="homebtn">Home</h3></div>
+  			<div class="col-sm-4"><h3 id="homebtn" class="currentPage">Home</h3></div>
   			<div class="col-sm-4"><h3 id="wrkbtn">Work</h3></div>
   			<div class="col-sm-4"><h3 id="cntctbtn">Contact</h3></div>
   		</div>
@@ -28,17 +29,18 @@
 <!--______________________________Home div: ________________________________-->
 	    <div class="row page" id="home">
 	    	<div class="col-sm-6">
-	    		<div style="display: table; height: 380px; overflow: hidden;">
-	    			<div style="display: table-cell; vertical-align: middle;">
-				       <div>
+	    		<div>
+	    			<div style="display: table;">
+				       <div style="display: table-cell; vertical-align: middle;">
 				         <h1>Nathan Oldfield</h1>
+				         <hr class="horizontal">
 	    		         <p>Computer Science Student</p>
 				       </div>
 				     </div>
 	    		</div>
 	    	</div>
 			<div class="col-sm-6" id="imageBox">
-				<img src="images/nath.jpg" class="pull-right" width="100%">
+				<img src="images/nath.jpg" class="pull-right" width="100%" id="nathan">
 			</div>
   	    </div>
 <!--________________________________________________________________________-->
@@ -46,38 +48,110 @@
   	    <div class="row page" id="work" style="display: none;">
 	    	<div class="col-sm-12">
 
-			    <h2>Profile</h2>
-			    <p>Degree: Bachelor of Science in Computer Science @ University of Manchester</p>
-			    <form method="get" action="Nathan_Oldfield_Cv.pdf">
-				<button type="submit" class="btn btn-primary center-block">Download a CV</button>
-			    </form>
+	    		
+	    		<br><br>
+	    		<div class="row" id="navBar">
+  			
+		  			<div class="col-sm-4"><a href="#experience"><p align="center">Experience</p></a></div>
+		  			<div class="col-sm-4"><a href="#education"><p align="center">Education</p></a></div>
+		  			<div class="col-sm-4"><a href="#projects"><p align="center">Projects</p></a></div>
+		  		</div>
+		  		<hr class="horizontal">
 
-			    <h2>Projects</h2>
+			    <h2 align="center"><a name="experience"></a>Experience</h2>
+			    <hr class="horizontalThick">
 	    	    
-	    		<h3>Velim</h3>
+	    		<h4 class="pull-left"><a href=http://www.nudgedigital.co.uk/>Nudge Digital</a> - Web Developer Intern</h4>
+	    		<hr class="horizontal">
+				<br>
+
+				<ul>
+					<li>
+						<p>Implemented a content migration tool using PHP to import content for the company's largest website</p>
+					</li>
+					<li>
+						<p>Provided both front and back end support for live Drupal 7 and Wordpress websites</p>
+					</li>
+					<li>
+						<p>Communicated effectively within an agile team of 5+ developers using Active Collab and Git</p>
+					</li>
+				</ul>
+
+				<h4 class="pull-left">University of Manchester - Network Engineer</h4>
+	    		<hr class="horizontal">
+				<br>
+
+				<ul>
+					<li>
+						<p>Implemented a VLAN of Raspberry Pi's within the CS department's network</p>
+					</li>
+					<li>
+						<p>Maintained and implemented Python scripts to automate processes such as logging MAC addresses</p>
+					</li>
+					<li>
+						<p>Ensured excellent wiki documentation was maintained and available for future Engineers</p>
+					</li>
+				</ul>
+
+				<h4 class="pull-left">University of Manchester - Student Ambassador</h4>
+	    		<hr class="horizontal">
+				<br>
+
+				<ul>
+					<li>
+						<p>Co-ordinated with fellow student ambassadors to prepare open day demonstrations and activities for prospective students</p>
+					</li>
+					<li>
+						<p>Designed and delivered workshops aimed at introducing children to technology</p>
+					</li>
+				</ul>
+				<br><br>
+
+				<h2 align="center"><a name="education"></a>Education</h2>
+			    <hr class="horizontalThick">
+	    	    
+	    		<h4 class="pull-left">University of Manchester, BSc Computer Science</h4>
+	    		<hr class="horizontal">
+				<br>
+
+				<ul>
+					<li>
+						<p>First year GPA: 77%</p>
+					</li>
+					<li>
+						<p>Key Courses: Object Oriented Software Development with Java, Mathematical Techniques for Computer Science, Computer Engineering, Fundamentals of Distributed Systems, Further French</p>
+					</li>
+				</ul>
+				<br><br>
+
+
+			    <h2 align="center"><a name="projects"></a>Projects</h2>
+			    <hr class="horizontalThick">
+	    	    
+	    		<h4 class="pull-left">Velim</h4>
 	    		<hr class="horizontal">
 	    		<div class="row">
 	    			<div class="col-sm-4">
 			    		<a href="images/Velim_screencap.png" class="swipebox" title="Velim">
-						<img src="images/Velim_screencap.png" width="100%" id="holla">
+						<img src="images/Velim_screencap.png" width="100%" id="picsmall">
 						</a>
 				    </div>
 				    <div class="col-sm-4">
 						<a href="images/Velim_screencap2.png" class="swipebox" title="Velim">
-						<img src="images/Velim_screencap2.png" width="100%" id="holla">
+						<img src="images/Velim_screencap2.png" width="100%" id="picsmall">
 						</a>
 				    </div>
 					<div class="col-sm-4">
 						<a href="images/Velim_screencap3.png" class="swipebox" title="Velim">
-						<img src="images/Velim_screencap3.png" width="100%" id="holla">
+						<img src="images/Velim_screencap3.png" width="100%" id="picsmall">
 						</a>
 				    </div>
 				</div>
-				<hr class="horizontal">
+				<br>
 
-				<p>Web application built using the LAMP stack. Movie search engine which queries a large MySQL database using a wide variety of user filled fields. The MySQL database has been filled using BASH scripts which scrape JSON data from IMDB.com. Implements fuzzy matching for text fields.</p>
+				<p>Web application built using the LAMP stack. Movie search engine which queries a large MySQL database using a wide variety of user filled fields. The MySQL database has been filled using BASH scripts which scrape JSON data from the Web. Implements fuzzy matching for text fields.</p>
 
-				<h3>Writing Portfolio</h3>
+				<h4 class="pull-left">Writing Portfolio</h4>
 	    		<hr class="horizontal">
 	    		<div class="row">
 	    			<div class="col-sm-4"></div>
@@ -88,11 +162,11 @@
 				    </div>
 					<div class="col-sm-4"></div>
 				</div>
-				<hr class="horizontal">
+				<br>
 
 				<p>Basic static online writing portfolio. Includes a contact section and a work showcase. Banner made with photoshop CS6.</p>
 
-				<h3>Raspberry Pi Home Server</h3>
+				<h4 class="pull-left">Raspberry Pi Home Server</h4>
 				<hr class="horizontal">
 				<p>Managed house torrents and media, remotely controllable and allowed streaming of media to any computer on the home network. More info to come soon...</p>
 
@@ -100,9 +174,10 @@
   	    </div>
 <!--________________________________________________________________________-->
 <!--______________________________Contact div: _____________________________-->
-  	    <div class="row page" id="contact" style="display: none;">
+  	    <div class="container-fluid row page" id="contact" style="display: none;">
 	    	<div class="col-sm-12">
 	    		<h2>Contact</h2>
+	    		<hr class="horizontal">
 	    		<div class="row">
 	    			<div class="col-sm-4"></div>
 	    			<div class="col-sm-4 center-block">
@@ -127,6 +202,10 @@
     <br>
   	<br>
   	</div>
+
+  	<footer class="footer">
+      <p class="footertext">Created by Nathan Oldfield, 2016</p>
+    </footer>
     
 
     <script src="nathScripts.js"></script>
